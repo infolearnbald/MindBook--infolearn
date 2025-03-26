@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBook - Livros Digitais e Cursos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2C3E50;
+            margin: 30px 0;
+            font-size: 2.5em;
+        }
+
+        .format-notice {
+            text-align: center;
+            background: #fff3cd;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 8px;
+            color: #856404;
+            border: 1px solid #ffeeba;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .livro {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .livro:hover {
+            transform: translateY(-5px);
+        }
+
+        .livro-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .whatsapp-link {
+            display: inline-block;
+            background: #25D366;
+            color: white!important;
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .whatsapp-link:hover {
+            background: #128C7E;
+        }
+
+        .cursos-section {
+            background: #f4f4f4;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .curso-btn {
+            background: #2C3E50;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background 0.3s;
+        }
+
+        .curso-btn:hover {
+            background: #1a2635;
+        }
+
+        .infolern-brand {
+            color: #27ae60;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📚 MindBook</h1>
+    
+    <div class="format-notice">
+        ⚡ Todos os livros disponíveis apenas em formato digital/e-book
+    </div>
+
+    <div class="container">
+        <!-- Exemplo de Livro -->
+        <div class="livro">
+            <img src="Galeria.jpg" alt="Título do Livro" class="livro-img">
+            <h2>Galeria de Almas</h2>
+            <p>    Este livro é uma viagem pelas emoções que todos nós experimentamos, uma jornada entre as sombras da melancolia e as
+luzes da memória. </p>
+            <p class="livro-preco">Preço: 420 MZN</p>
+            <a href="https://wa.me/258844180213?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20livro%20[TÍTULO]" 
+               class="whatsapp-link" 
+               target="_blank">
+                Saber Mais
+            </a>
+        </div>
+
+        <!-- Repetir bloco do livro 3x mais (total 4) -->
+
+        <!-- Seção de Cursos -->
+        <div class="cursos-section">
+            <h2>🎓 Cursos InfolEarn</h2>
+            <p class="infolern-brand">Uma divisão da MindBook</p>
+            
+            <p>Cursos Disponíveis:</p>
+            <ul style="list-style: none; margin: 15px 0;">
+                <li>✔️ Marketing Digital</li>
+                <li>✔️ Dropshipping</li>
+                <li>✔️ Gestão Financeira</li>
+                <li>✔️ Informática Básica</li>
+            </ul>
+
+            <button class="curso-btn" 
+                    onclick="window.open('https://wa.me/258844180213?text=Olá!%20Gostaria%20de%20informações%20sobre%20os%20cursos', '_blank')">
+                WhatsApp para Cursos
+            </button>
+            
+            <button class="curso-btn" 
+                    onclick="window.location.href='mailto:infolearn8441@gmail.com?subject=Informações sobre Cursos'">
+                Email para Cursos
+            </button>
+        </div>
+    </div>
+</body>
+</html>
